@@ -33,6 +33,14 @@
       Argumennya berisi kondisi yang harus dipenuhi agar looping tetap berjalan.
 
  3) do-while-loop
+    Contoh:
+    do {
+        printf("i = %d\n", i);
+        i++;
+    } while (i <= 10);
+
+    do-while-loop memastikan bahwa code di dalam kurung kurawal, dijalankan setidaknya
+    satu kali.
 */
 
 int main(void)
@@ -50,13 +58,19 @@ int main(void)
     // }
 
 
-    int i = 1;
-    while (i <= 10) {
-      if (i % 2 == 0) {
-        printf("i = %d\n", i);
-      }
+    // int i = 1;
+    // while (i <= 10) {
+    //   if (i % 2 == 0) {
+    //     printf("i = %d\n", i);
+    //   }
+    //   i++;
+    // }
+
+    int i = 0;
+    do {
+      printf("i = %d\n", i);
       i++;
-    }
+    } while (i <= 10);
 
     return 0;
 }
