@@ -1,6 +1,8 @@
 #include <stdio.h>
+
 int main(void)
 {
-    printf("Hello");   
+    __AW_STR
+
     return 0;
 }
