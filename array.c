@@ -10,7 +10,7 @@ Sebelum membuat loop, 3 hal yang harus diperhatikan:
 3. Apa yang dilakukan setiap iterasi (output).
 
 PERLU DIINGAT!!
-i++ di dalam tanda kurung kurawal {}
+Untuk yang while, i++ di dalam tanda kurung kurawal {}
 
 */
 
