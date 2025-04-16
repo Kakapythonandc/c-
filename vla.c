@@ -1,21 +1,19 @@
 #include <stdio.h>
 
-int main(void)
-{
-    int n;
-    printf("Masukkan banyaknya angka: ");
-    scanf("%d", &n);
+int main() {
+    int a = 5, b = 3, c = 2, result;
 
-    int x[n];
-    int i;
+    __asm__ __volatile__ (
+        "movl %1, %%eax;"   // eax = a
+        "imull %2, %%eax;"  // eax = eax * b
+        "addl %3, %%eax;"   // eax = eax + c
+        "movl %%eax, %0;"   // result = eax
+        : "=r"(result)      // output operand
+        : "r"(a), "r"(b), "r"(c)  // input operands
+        : "%eax"            // clobbered register
+    );
 
-    for (i = 0; i < n; i++) {
-        printf("Masukkan angka ke-%d: ", i);
-        scanf("%d", &x[i]);
-    }
+    printf("Result: %d\n", result); // (5 * 3) + 2 = 17
 
-    for (i = 0; i < n; i++) {
-        printf("Angka ke-%d yang Anda masukkan adalah %d\n", i, x[i]);
-    }
     return 0;
 }
