@@ -16,8 +16,11 @@ jika, 8 bytes = 64 bit
 #include <stdio.h>
 
 struct koordinat {
-    int x;
-    int y;
+    long a;
+    short b;
+    int c;
+    int d;
+    char e;
 };
 
 struct rx
@@ -37,15 +40,20 @@ struct tx
 
 struct dx
 {
-    int a;
+    long a;
     char b;
-    int c;
-    short d;
+    char c;
+    int d;
+    char e;
+    short f;
+    long g;
 };
 
+struct dx *a;
 
 int main(void)
 {
+
     // Size of bisa dipakai langsung ke tipe datanya.
     printf("Ukuran dari tipe integer adalah %zu bytes\n", sizeof(int));
 

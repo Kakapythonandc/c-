@@ -24,7 +24,7 @@ struct siswa {
 
 int main(void)
 {
-    struct siswa x;;
+    struct siswa x;
     x.umur = 14;
     x.kelas = 7;
     
@@ -37,4 +37,4 @@ int main(void)
     printf("alamat = %s\n", x.alamat);
     
     return 0;
-}
+}x
