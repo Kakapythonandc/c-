@@ -41,12 +41,12 @@ struct tx
 struct dx
 {
     long a;
-    char b;
-    char c;
-    int d;
-    char e;
-    short f;
-    long g;
+    int b;
+    int c;
+    char d;
+    long e;
+    char f;
+    int g;
 };
 
 struct dx *a;
