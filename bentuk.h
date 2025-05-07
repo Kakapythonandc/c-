@@ -11,4 +11,14 @@ struct triangle
     float a, t;
 };
 
+struct parallelogram
+{
+    int a, t; 
+};
+
+struct circle
+{
+    float r;
+};
+
 #endif
